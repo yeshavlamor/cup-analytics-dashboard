@@ -1,0 +1,16 @@
+/* general font */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* metric card*/
+div.st-emotion-cache-j5r0tf.e1f1d6gn3 {
+    /* background-color: #FFFFFF; */
+    border: 1px solid #CCCCCC;
+    padding: 3% 5% 3% 2%; 
+    border-radius: 5px;
+    border-left: 0.5rem solid #00C09A !important;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+    }
