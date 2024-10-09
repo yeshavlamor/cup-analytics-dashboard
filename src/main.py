@@ -1,18 +1,17 @@
 import streamlit as st
+st.set_page_config(page_title="Cup Analytics Dashboard", layout="wide") 
+
+# import rest of libraries
 import pandas as pd
 import plotly.express as px # for visualisations 
 import plotly.graph_objects as go # provides more fine-tuned control over indiv elements of graph 
 import matplotlib.pyplot as plt
 import seaborn as sns
+import database 
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, f1_score
 from sklearn.preprocessing import StandardScaler
-
-# set page config 
-st.set_page_config(page_title="Cup Analytics Dashboard", layout="wide")
-
-import database 
 
 # import custom css design 
 with open('style.css') as f:
@@ -94,13 +93,14 @@ with col2:
     error_counts_df = pd.DataFrame({'error_type': error_counts.index, 'count': error_counts.values})
     total_errors = error_counts_df['count'].sum()
     error_counts_df['percentage'] = error_counts_df['count'] / total_errors * 100
+    
     # sort by percentage in descending order
     error_counts_df = error_counts_df.sort_values('percentage', ascending=False)
 
     # slider for selecting top N error types
     error_types = filtered_error_df['error_type'].nunique()
 
-    # first check if error types == 0. put in the less freq case as first test
+    # first check if error types == 0. less frequent case as first test
     if(error_types == 0):
         # display error message 
         st.markdown(
@@ -116,12 +116,11 @@ with col2:
         st.write("No error types to display.")
 
     else:
-         # display slider according to num of error types 
+         # display slider according to number of error types 
          if(error_types>=3): top_n = st.slider("Select top N error types to display: ", min_value=0, max_value=len(error_counts.index), value=3)
          else: top_n = st.slider("Select top N error types to display: ", min_value=0, max_value=len(error_counts.index), value=1)
          top_n_df = error_counts_df.head(top_n)
-
-         # bar chart using plotly 
+ 
          fig = go.Figure(go.Bar(
              y=top_n_df['error_type'],
              x=top_n_df['count'],
