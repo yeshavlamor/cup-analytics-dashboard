@@ -14,6 +14,10 @@ The Cup Analytics Dashboard provides a user-friendly interface to visualize and 
     <img src="/screenshots/main.png" alt="Dashboard Preview">
 </p>
 
+<p align="center">
+    <img src="/screenshots/model.png" alt="Dashboard Preview">
+</p>
+
 ## Features
 
 - **Branch-based Filtering:** Select specific branches to analyze their data.
