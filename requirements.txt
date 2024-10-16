@@ -1,6 +1,9 @@
-streamlit==1.18.0          # Web application framework
-pandas==1.5.3              # Data manipulation and analysis
-plotly==5.14.1             # Interactive visualizations
-matplotlib==3.6.0          # Plotting library
-seaborn==0.12.2            # Statistical data visualization
-scikit-learn==1.2.0        # Machine learning library
+streamlit
+pandas            
+numpy
+plotly           
+matplotlib      
+seaborn            
+scikit-learn               
+sqlalchemy
+psycopg2-binary
