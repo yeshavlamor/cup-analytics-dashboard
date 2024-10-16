@@ -3,12 +3,12 @@
 <!-- ![Vekin Logo](/screenshots/vekin.png) -->
 
 <div style="text-align:center">
-  <img src="/screenshots/padded_vekin_2.png" alt="Alt text" style="width:100%;">
+  <img src="/screenshots/padded_vekin_2.png" alt="Alt text" style="width:70%;">
 </div>
 
-A comprehensive analytics dashboard developed in Streamlit for analyzing cup usage and error data.
+The Cup Analytics Dashboard was developed to aid Vekin in analysing cup usage and error data. I developed this dashboard using the open-source Python framework,  [Streamlit](https://docs.streamlit.io/).
 
-The Cup Analytics Dashboard provides a user-friendly interface to visualize and analyze data related to cup usage, user statistics, and error types. It offers real-time filtering, interactive charts, and machine learning model training and prediction capabilities for users to interact with.
+ provides a user-friendly interface to visualize and analyze data related to cup usage, user statistics, and error types. It offers real-time filtering, interactive charts, and machine learning model training and prediction capabilities for users to interact with.
 
 <p align="center">
     <img src="/screenshots/main.png" alt="Dashboard Preview">
