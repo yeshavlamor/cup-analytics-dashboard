@@ -3,19 +3,15 @@
 <!-- ![Vekin Logo](/screenshots/vekin.png) -->
 
 <div style="text-align:center">
-  <img src="/screenshots/padded_vekin_2.png" alt="Alt text" style="width:70%;">
+  <img src="/screenshots/padded_vekin_2.png" alt="Alt text" style="width:100%;">
 </div>
 
-The Cup Analytics Dashboard was developed to aid Vekin in analysing cup usage and error data. I developed this dashboard using the open-source Python framework,  [Streamlit](https://docs.streamlit.io/).
+A comprehensive analytics dashboard developed in Streamlit for analyzing cup usage and error data.
 
- provides a user-friendly interface to visualize and analyze data related to cup usage, user statistics, and error types. It offers real-time filtering, interactive charts, and machine learning model training and prediction capabilities for users to interact with.
+The Cup Analytics Dashboard provides a user-friendly interface to visualize and analyze data related to cup usage, user statistics, and error types. It offers real-time filtering, interactive charts, and machine learning model training and prediction capabilities for users to interact with.
 
 <p align="center">
     <img src="/screenshots/main.png" alt="Dashboard Preview">
-</p>
-
-<p align="center">
-    <img src="/screenshots/model.png" alt="Dashboard Preview">
 </p>
 
 ## Features
@@ -30,23 +26,9 @@ The Cup Analytics Dashboard was developed to aid Vekin in analysing cup usage an
   - Machine Learning Model Training with customizable hyperparameters
   - Success Probability Prediction based on input variables
 
-## Setup and Configuration
+## Live Demo
+Explore the live demo here: [**Cup Analytics Dashboard**](https://cup-analytics-dashboard.streamlit.app/)
 
-1. Clone the Repository:
-   ```
-   git clone https://github.com/yeshavlamor/cup-analytics-dashboard.git
-   cd cup-analytics-dashboard
-   ```
-
-2. Install Dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-
-3. Run the Streamlit App:
-   ```
-   streamlit run main.py
-   ```
 
 ## Usage
 
@@ -60,16 +42,53 @@ The Cup Analytics Dashboard was developed to aid Vekin in analysing cup usage an
 
 ## Project Structure
 
-- `main.py`: Main Streamlit application file
+<!-- - `main.py`: Main Streamlit application file
 - `database.py`: Module for database operations (not provided in the code snippet)
 - `style.css`: Custom CSS styles for the dashboard
-- `assets/`: Directory containing images and icons
+- `assets/`: Directory containing images and icons -->
 
-## Dependencies
+cup-analytics-dashboard/
+│
+├── src/
+│   ├── main.py            # Main Streamlit application 
+│   └── database.py        # Module for database operations
+│
+├── .streamlit/
+│   └── secrets.toml       # Configuration file 
+│
+├── assets/            # Directory containing images and icons
+├── screenshots/           # Directory for dashboard screenshots 
+├── style.css              # Custom CSS styles for the dashboard
+├── requirements.txt       # List of Python dependencies
+├── README.md              # Project documentation (this file)
+└── .gitignore             # Specifies intentionally untracked files to ignore
 
-- streamlit
-- pandas
-- plotly
-- matplotlib
-- seaborn
-- scikit-learn
+## Setup and Configuration
+To run the dashboard locally, follow these steps: 
+
+1. Clone the Repository:
+   ```
+   git clone https://github.com/yeshavlamor/cup-analytics-dashboard.git
+   cd cup-analytics-dashboard
+   ```
+
+2. Install Dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Configure Secrets:
+Create a secrets.toml file in the .streamlit directory and add your database credentials. The structure should be similar to:
+   ```
+   [postgres]
+   host = "your_host"
+   port = "your_port"
+   database = "your_database"
+   user = "your_username"
+   password = "your_password"
+   ```
+
+4. Run the Streamlit App:
+   ```
+   streamlit run main.py
+   ```
