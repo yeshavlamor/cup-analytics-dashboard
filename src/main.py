@@ -27,7 +27,7 @@ st.title("Cup Analytics Dashboard")
 
 # sidebar area  
 with st.sidebar:
-    st.sidebar.image("assets/vekin_logo.png", width=250)
+    st.sidebar.image("assets/vekin_logo.png", width=150)
     st.sidebar.title("Please Filter Here: ")
 
 # filter is the branch_code
