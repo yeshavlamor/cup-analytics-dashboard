@@ -6,11 +6,10 @@
   <img src="/screenshots/padded_vekin_2.png" alt="Alt text" style="width:100%;">
 </div>
 
-This dashboard was developed for a comprehensive analysis of cup data from Vekin. It was created using Streamlit
+This dashboard was developed to showcase my data analysis of cup data from Vekin. It was created using [Streamlit](https://streamlit.io/), an open-source Python framework popularly used to deliver interactive data apps. 
 
-in Streamlit for analyzing cup usage and error data.
 
-The Cup Analytics Dashboard provides a user-friendly interface to visualize and analyze data related to cup usage, user statistics, and error types. It offers real-time filtering, interactive charts, and machine learning model training and prediction capabilities for users to interact with.
+The Cup Analytics Dashboard provides a user-friendly interface to visualise data related to cup count, user statistics, and error types. It offers real-time filtering, interactive charts, model training and prediction capabilities for users to engage with.
 
 <p align="center">
     <img src="/screenshots/main.png" alt="Dashboard Preview">
@@ -43,26 +42,6 @@ Explore the live demo here: [**Cup Analytics Dashboard**](https://cup-analytics-
    - Predict success probability based on input variables
 
 ## Project Structure
-
-<!-- - `main.py`: Main Streamlit application file
-- `database.py`: Module for database operations (not provided in the code snippet)
-- `style.css`: Custom CSS styles for the dashboard
-- `assets/`: Directory containing images and icons -->
-
-   <!-- .
-   ├── src/
-   │   ├── main.py            # Main Streamlit application 
-   │   └── database.py        # Module for database operations
-   │
-   ├── .streamlit/
-   │   └── secrets.toml       # Configuration file 
-   │
-   ├── assets/            # Directory containing images and icons
-   ├── screenshots/           # Directory for dashboard screenshots 
-   ├── style.css              # Custom CSS styles for the dashboard
-   ├── requirements.txt       # List of Python dependencies
-   ├── README.md              # Project documentation (this file)
-   └── .gitignore             # Specifies intentionally untracked files to ignore -->
 
     .cup-analytics-dashboard/
     ├── src                   
