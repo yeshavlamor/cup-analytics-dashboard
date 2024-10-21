@@ -6,7 +6,9 @@
   <img src="/screenshots/padded_vekin_2.png" alt="Alt text" style="width:100%;">
 </div>
 
-A comprehensive analytics dashboard developed in Streamlit for analyzing cup usage and error data.
+This dashboard was developed for a comprehensive analysis of cup data from Vekin. It was created using Streamlit
+
+in Streamlit for analyzing cup usage and error data.
 
 The Cup Analytics Dashboard provides a user-friendly interface to visualize and analyze data related to cup usage, user statistics, and error types. It offers real-time filtering, interactive charts, and machine learning model training and prediction capabilities for users to interact with.
 
