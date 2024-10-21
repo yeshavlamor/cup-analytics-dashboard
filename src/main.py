@@ -49,27 +49,27 @@ col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
     kpi_col1, kpi_col2 = st.columns([1,2]) # splits each column into sub-columns, where first subcolumn takes up one unit and the next one takes up 3 units of space
-    kpi_col1.image('assets/total_cups_icon.png', width=50) 
+    kpi_col1.image('assets/total_cups_icon.png', width=30) 
     kpi_col2.metric("Total Cups", filtered_cup_df['total_cup'].sum())
 
 with col2:
     kpi_col1, kpi_col2 = st.columns([1,2]) # splits each column into sub-columns, where first subcolumn takes up one unit and the next one takes up 3 units of space
-    kpi_col1.image('assets/unique_users_icon.png', width=50) 
+    kpi_col1.image('assets/unique_users_icon.png', width=30) 
     kpi_col2.metric("Unique Users", filtered_cup_df['user_count'].nunique())
 
 with col3:
     kpi_col1, kpi_col2 = st.columns([1,2]) # splits each column into sub-columns, where first subcolumn takes up one unit and the next one takes up 3 units of space
-    kpi_col1.image('assets/avg_cup_count_icon.png', width=50) 
+    kpi_col1.image('assets/avg_cup_count_icon.png', width=30) 
     kpi_col2.metric("Avg Cup Count", filtered_cup_df['cup_count'].mean().round(2))
 
 with col4:
     kpi_col1, kpi_col2 = st.columns([1,2]) # splits each column into sub-columns, where first subcolumn takes up one unit and the next one takes up 3 units of space
-    kpi_col1.image('assets/success_rate_icon.png', width=50) 
+    kpi_col1.image('assets/success_rate_icon.png', width=30) 
     kpi_col2.metric("Success Rate", f"{(filtered_cup_df['status'] == 'SUCCESS').mean()*100:.1f}%")
 
 with col5:
     kpi_col1, kpi_col2 = st.columns([1,2]) # splits each column into sub-columns, where first subcolumn takes up one unit and the next one takes up 3 units of space
-    kpi_col1.image('assets/error_type_icon.png', width=50) 
+    kpi_col1.image('assets/error_type_icon.png', width=30) 
     kpi_col2.metric("Error Types", filtered_error_df['error_type'].nunique())
 
 
