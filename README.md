@@ -49,21 +49,35 @@ Explore the live demo here: [**Cup Analytics Dashboard**](https://cup-analytics-
 - `style.css`: Custom CSS styles for the dashboard
 - `assets/`: Directory containing images and icons -->
 
-cup-analytics-dashboard/
-│
-├── src/
-│   ├── main.py            # Main Streamlit application 
-│   └── database.py        # Module for database operations
-│
-├── .streamlit/
-│   └── secrets.toml       # Configuration file 
-│
-├── assets/            # Directory containing images and icons
-├── screenshots/           # Directory for dashboard screenshots 
-├── style.css              # Custom CSS styles for the dashboard
-├── requirements.txt       # List of Python dependencies
-├── README.md              # Project documentation (this file)
-└── .gitignore             # Specifies intentionally untracked files to ignore
+   <!-- .
+   ├── src/
+   │   ├── main.py            # Main Streamlit application 
+   │   └── database.py        # Module for database operations
+   │
+   ├── .streamlit/
+   │   └── secrets.toml       # Configuration file 
+   │
+   ├── assets/            # Directory containing images and icons
+   ├── screenshots/           # Directory for dashboard screenshots 
+   ├── style.css              # Custom CSS styles for the dashboard
+   ├── requirements.txt       # List of Python dependencies
+   ├── README.md              # Project documentation (this file)
+   └── .gitignore             # Specifies intentionally untracked files to ignore -->
+
+    .cup-analytics-dashboard/
+    ├── src                   
+    │     ├── main.py          # Main Streamlit application
+    │     └── database.py      # Module for database operations
+    │
+    ├── .streamlit/   
+    │     └── secrets.toml     # Configuration file    
+    │              
+    ├── assets/                # Directory containing images and icons
+    ├── screenshots/           # Directory for dashboard screenshots 
+    ├── style.css              # Custom CSS styles for the dashboard
+    ├── requirements.txt       # List of Python dependencies
+    ├── README.md              # Project documentation (this file)
+    └── .gitignore             # Specifies intentionally untracked files to ignore
 
 ## Setup and Configuration
 To run the dashboard locally, follow these steps: 
